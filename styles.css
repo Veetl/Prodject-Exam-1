@@ -1,0 +1,189 @@
+html, body {
+    margin: 0%;
+    padding: 0%;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #000000;
+    background-color: #E4DAD1;
+}
+header {
+    position: sticky;
+    background-color: #FF6E6E; 
+    flex-direction: row;
+}
+.flex {
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+    margin: auto;
+    line-height: 5em;
+}
+#Blog-name {
+    font-size: 2em;
+    margin: 0px;
+    font-weight: bold;
+    text-decoration: none;
+    color:#000000;  
+}
+#burger {
+    cursor: pointer;  
+}
+#hamburger-menu{
+    display: none;
+}
+.fa-bars {
+    font-size: 30px;
+    line-height: 40px;
+}
+#hamburger-menu:checked ~ nav {
+    display: none;
+}
+nav {
+    background-color: #203041;
+    flex-direction: column;
+    border-top: 1px solid #50874A;
+}
+nav a {
+    width: 350px;
+    margin: auto;
+}
+a:hover {
+    color: #f0c142;
+}
+
+.headertext {
+    text-decoration: none;
+    color: #000000;
+    display:block;
+    text-align:center;
+}
+.carousel {
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 4em;
+}
+.carousel {
+    position: relative;
+}
+.box {
+   border-style: solid; 
+   padding: 200px 70px;
+   background-color:lightblue;
+}
+.radiocar {
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+    margin: auto;
+}
+.buttonstyle {
+    cursor: pointer;
+}
+#box1 {
+    display:block;
+}
+#box2 {
+    display:none;
+}
+#box3 {
+    display:none;
+}
+.buttontextstyle {
+    font-size: 18px;
+    text-decoration: none;
+    color:#ebe2d1;
+    margin-top: 10px;
+    margin-bottom: 10px;   
+}
+@media screen and (max-width: 1020px) {
+    .flex,
+    .carousel {
+        width: 850px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .flex,
+    .carousel {
+        width: 790px;
+    }
+    .radiocar {
+        width: 197px;
+    }
+    .box {
+        padding: 150px 52px;
+    }   
+}
+
+@media screen and (max-width: 810px) {
+    .flex,
+    .carousel {
+        width: 700px;
+    }
+    .radiocar {
+        width: 175px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .flex,
+    .carousel {
+        width: 600px;
+    }
+    .radiocar {
+        width: 150px;
+    }
+    .box {
+        padding: 100px 35px;
+    }
+}
+#burger,
+#hamburger-menu ~ nav  {
+    display: none;
+}
+@media screen and (max-width: 620px) {
+    .flex,
+    .carousel,
+    nav a { 
+        width: 500px;
+    }
+    .headertext {
+        display: none;
+    }
+    #burger  {
+        display: block;
+    }
+    #hamburger-menu ~ nav  {
+        display: flex;
+    }
+    #Blog-name {
+        font-size: 25px;
+    }
+    .box {
+        padding: 100px 20px;
+    }
+    .radiocar {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .flex,
+    .carousel,
+    nav a {
+        width: 420px;
+    } 
+}
+
+@media screen and (max-width: 440px) {
+    .flex,
+    .carousel,
+    nav a {
+        width: 350px;
+    }
+    .box {
+        padding: 100px 13px;
+    }
+}
+
