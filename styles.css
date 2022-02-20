@@ -79,6 +79,8 @@ a:hover {
 }
 .buttonstyle {
     cursor: pointer;
+    width: 30px;
+    height: 100px;;
 }
 #box1 {
     display:block;
