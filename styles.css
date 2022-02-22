@@ -72,16 +72,9 @@ a:hover {
     border-style: solid; 
     background-color:lightblue;
 }
-.radiocar {
-    display: flex;
-    width: 250px;
-    justify-content: space-between;
-    margin: auto;
-}
-.buttonstyle {
+.arrows {
     cursor: pointer;
-    width: 30px;
-    height: 100px;;
+    font-size: 40px;
 }
 #box1 {
     display:block;
@@ -99,6 +92,37 @@ a:hover {
     margin-top: 10px;
     margin-bottom: 10px;   
 }
+.post img[class*="wp-image-"] {
+    width: 500px;
+    height: 500px;
+}
+#modal{
+    display:none;
+    position:fixed;
+    z-index:1;
+    padding-top:100px;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+#modal-content {
+    margin: auto;
+    display: block;
+}
+.close {
+    position: absolute;
+    top:15px;
+    right: 35px;
+    color:#f1f1f1;
+    font-size: 40px;
+}
+#img01 {
+    width: 800px;
+    height: 800px;
+}
 @media screen and (max-width: 1020px) {
     .flex,
     .carousel {
@@ -111,9 +135,6 @@ a:hover {
     .carousel {
         width: 790px;
     }
-    .radiocar {
-        width: 197px;
-    }
     .box {
         width: 9em;
     }   
@@ -124,18 +145,12 @@ a:hover {
     .carousel {
         width: 700px;
     }
-    .radiocar {
-        width: 175px;
-    }
 }
 
 @media screen and (max-width: 720px) {
     .flex,
     .carousel {
         width: 600px;
-    }
-    .radiocar {
-        width: 150px;
     }
     .box {
         width: 7em;
@@ -167,9 +182,7 @@ a:hover {
         width: 5em;
         height: 18em;
     } 
-    .radiocar {
-        width: 100px;
-    }
+    
 }
 
 @media screen and (max-width: 520px) {

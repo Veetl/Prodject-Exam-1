@@ -1,0 +1,6 @@
+//notes
+
+`${info[i].content.rendered}`
+
+
+${info.excerpt.rendered}
